@@ -3,6 +3,9 @@
 # base image
 FROM node:alpine
 
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV NODE_ENV=production
+
 # directory
 WORKDIR /usr/src
 
